@@ -13,7 +13,7 @@ fi
 brew analytics off
 
 # brew install
-echo -e '\033[92m''[*] Installing brew package...''\033[0m'
+echo -e '\033[92m''[*] Installing homebrew/core package...''\033[0m'
 brew install \
 nmap \
 git \
@@ -22,8 +22,8 @@ mas \
 java11
 
 # fish config
-echo -e '\033[92m''[*] Move fish config to ''\033[93m''~/.config/fish/''\033[92m''...''\033[0m'
 if [ -d "~/.config/fish/" ]; then
+  echo -e '\033[92m''[*] Move fish config to ''\033[93m''~/.config/fish/''\033[92m''...''\033[0m'
   cp -R ./config/fish/ ~/.config/fish/
 fi
 
