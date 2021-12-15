@@ -15,11 +15,12 @@ brew analytics off
 # brew install
 echo -e '\033[92m''[*] Installing homebrew/core package...''\033[0m'
 brew install \
-nmap \
-git \
+ffmpeg \
 fish \
+git \
 mas \
-java11
+nmap \
+openjdk@11
 
 # fish config
 if [ -d "~/.config/fish/" ]; then
@@ -30,22 +31,26 @@ fi
 # brew cask install
 echo -e '\033[92m''[*] Installing homebrew/cask package...''\033[0m'
 brew install --cask \
-iterm2 \
-spotify \
-brooklyn \
-vmware-fusion \
-google-chrome \
-notion \
-visual-studio-code \
 1password \
-the-unarchiver \
-telegram-desktop \
-messenger \
-iina
-# stats \
+# appcleaner \
+brooklyn \
+google-chrome \
 # hiddenbar \
-# quip \
+iina \
+iterm2 \
+# keka \
+messenger \
+# microsoft-office-2016 \
 # microsoft-remote-desktop \
+# ngrok \
+notion \
+# quip \
+spotify \
+# stats \
+telegram-desktop \
+the-unarchiver \
+visual-studio-code \
+vmware-fusion
 
 # brew cask/versions install
 echo -e '\033[92m''[*] Installing homebrew/cask-versions package...''\033[0m'
@@ -54,20 +59,12 @@ brew install --cask \
 firefox-nightly
 
 # brew cask/font install
-# echo -e '\033[92m''[*] Installing homebrew/cask-fonts package...''\033[0m'
-# brew tap homebrew/cask-fonts
-# brew install \
-# font-noto-sans-cjk-tc \
-# --cask
+echo -e '\033[92m''[*] Installing homebrew/cask-fonts package...''\033[0m'
+brew tap homebrew/cask-fonts
+brew install --cask \
+font-noto-sans-cjk-tc
 
 # mas install
-# APP_ID    |APP_NAME
-# ----------|--------
-# 1105332179|KKBOX
-# 975937182 |Fantastical
-# 539883307 |LINE
-# 1176895641|Spark 
-# 1451685025|WireGuard
 echo -e '\033[92m''[*] Installing App Store applications...''\033[0m'
 mas install \
 1451685025 \
